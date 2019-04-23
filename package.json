@@ -1,0 +1,30 @@
+{
+  "name": "express-handlebars-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starsuit/express-handlebars-practice.git"
+  },
+  "keywords": [],
+  "author": "Sam Dickeson https://github.com/starsuit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/starsuit/express-handlebars-practice/issues"
+  },
+  "homepage": "https://github.com/starsuit/express-handlebars-practice#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "express-session": "^1.16.1",
+    "serve-favicon": "^2.5.0"
+  }
+}
