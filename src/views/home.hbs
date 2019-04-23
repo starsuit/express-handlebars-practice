@@ -1,2 +1,5 @@
 {{!-- content rendered to the page - the 'name' variable is fed in in home.js --}}
 <h2>Welcome, {{name}} <a href="/logout">log out</a></h2>
+{{#if image}}
+<img src="{{image}}" alt="{{name}}">
+{{/if}}

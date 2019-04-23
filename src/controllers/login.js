@@ -8,6 +8,7 @@ const get = (req, res) => {
 // so when we redirect to "/", req.session.name is still available
 const post = (req, res) => {
   req.session.name = req.body.name;
+  req.session.image = req.body.image;
   res.redirect("/");
 };
 

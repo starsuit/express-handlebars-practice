@@ -3,13 +3,14 @@
 const home = (req, res) => {
   // the name submitted in the form has been stored in the session variables
   // we just have to get it out and assign it to a variable
-  const name = req.session.name;
+  const { name, image } = req.session;
+  console.log({ name, image });
   if (!name) {
     res.status(302);
     res.redirect("/login");
   } else {
     // puts the 'name' variable into the home template (home.hbs) so it can render our name on the page
-    res.render("home", { name });
+    res.render("home", { name, image });
   }
 };
 
