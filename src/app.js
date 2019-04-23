@@ -8,6 +8,7 @@ const session = require("express-session");
 const error = require("./controllers/error");
 const home = require("./controllers/home");
 const login = require("./controllers/login");
+const logout = require("./controllers/logout");
 
 const app = express();
 
@@ -32,6 +33,8 @@ app.get("/login", login.get);
 // if a post request is made to the login route, we call the 'login.post' function
 // 'login.post' will process the data submitted in the form, and add it to the session
 app.post("/login", login.post);
+// the logout route calls the 'logout' function, which will clear our session data and redirect to the login page
+app.get("/logout", logout);
 
 // these functions handle errors
 // ---
