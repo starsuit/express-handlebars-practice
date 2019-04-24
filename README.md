@@ -3,6 +3,7 @@
 > Author: [@starsuit](https://github.com/starsuit)
 
 Basic-ish Express server with Handlebars and express-session to handle cookies/authentication
+Check out the 'github' branch for a fun extra promise/api call
 
 ## Setup
 
